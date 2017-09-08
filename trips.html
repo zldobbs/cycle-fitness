@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Cycle Fitness</title>
+        <link href="CSS/main.css" type="text/css" rel="stylesheet" />
+		<link href="images/favicon.ico" rel="icon" type="image/png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="javascript/main-script.js"></script>
+    </head>
+    
+    <body>
+    
+    	<div id="outercontainer">
+        
+        	<!-- Original Background -->
+            <img id="start" class="backimg" src="images/main-back.png" alt="Main Background" />
+            
+            <!-- Loaded Background Image, either def-back.png or a lifestyle image that fits theme of page -->
+            <img id="load_back" class="backimg" src="images/trip-back.jpg" alt="Trips Background" />
+            
+        	<div id="navbar">
+                <ul id="navlist">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a id="selected" href="trips.html">CYCLE TRIPS</a></li>
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100" height="100" align="center"/></a>
+                    <li><a href="seminars.html">SEMINARS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="legal.html">LEGAL</a></li>
+                </ul>
+            </div>
+            
+        <div id="page_content">
+            <div>
+                <p id="page_title">UPCOMING BICYCLE TRIPS</p> 
+            </div>
+            <div class="box" id="title_sub">
+                <div class="box_text">
+                    <p>Cycle Fitness coordinates many cycling trips. These trips are a way to cycle with others in extravagant settings. 
+                    The trips are accessible for all skill levels. If you wish to participate in a cycling trip, please fill out the registration
+                    form on this page. We will email you a confirmation with more information when we have finalized your registration.</p>
+                    <h3>List of Upcoming Cycling Trips</h3>
+                    </ul>
+                        <li>Downtown City Tour - 1/15/2015 - 11:00am</li>
+                        <li>Countryside Relaxation - 1/27/2015 - 9:00am</li>
+                        <li>Suburb Cycling - 2/10/2015 - 3:00pm</li>
+                        <li>Glow Ride - 2/27/2015 - 7:30pm</li>
+                        <li>Rock-n-Roll Cycling - 3/10/2015 - 11:30am</li>
+                    </ul>
+                </div>
+            </div>
+			<div class="box" id="main_content">
+				<div class="box_text">
+					<h3>Register for an Event</h3> <!-- This info is not saved-->
+                    <form>
+                        <p>First Name: 
+                            <input type="text" name="first-name" maxlength="30" />
+                        Last Name:
+                            <input type="text" name="last-name" maxlength="30" />
+                        </p>
+                        <p>Street Address:
+                            <input type="text" name="street" maxlength="50" size="40" />
+                        </p>
+                        <p>City:
+                            <input type="text" name="city" maxlength="30" />
+                        State:
+                            <input type="text" name="state" maxlength="2" size="2" />
+                        Zip Code:
+                            <input type="text" name="zip" maxlength="5" size="5" />
+                        </p>
+                        <p>Email:
+                            <input type="text" name="email" maxlength="50" size="40" />
+                        </p>
+                        <p>Desired Trip:
+                        <select name="trips">
+                            <option value="DCT">Downtown City Tour</option>
+                            <option value="CR">Countryside Relaxation</option>
+                            <option value="SC">Suburb Cycling</option>
+                            <option value="GR">Glow Ride</option>
+                            <option value="RnRC">Rock-n-Roll Cycling</option>
+                        </select>
+                        </p>
+                    </form>
+                    <button><a href="tsubmit.html">Submit Registration</a></button>
+				</div>
+			</div>
+        </div>
+
+        </div>
+        
+    </body>
+</html>
